@@ -1,0 +1,22 @@
+<mat-card>
+        <mat-radio-group aria-label="Velg lotteri">
+                <mat-radio-button (change)="lotteryChosen($event)" value="lotto">Lotto</mat-radio-button>
+                <mat-radio-button (change)="lotteryChosen($event)" value="vikinglotto">Vikinglotto</mat-radio-button>
+              </mat-radio-group>
+              
+
+</mat-card>
+
+
+<app-lotto
+
+[lottoChild]="lotto"
+
+></app-lotto>
+
+<app-vikinglotto
+
+[vikinglottoChild]="vikinglotto"
+
+></app-vikinglotto>
+

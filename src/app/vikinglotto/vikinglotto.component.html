@@ -1,0 +1,16 @@
+<div *ngIf="vikinglottoChild">
+        <mat-card>
+       
+                  
+
+          
+        <mat-card-content>
+               <h2> Lykketallene i Vikinglotto er: </h2>
+            <p></p>
+        <span class="lottoletters" *ngFor="let numbers of vikinglottonumbers_picked">
+                    {{numbers}}
+        </span>
+    </mat-card-content>
+ 
+    </mat-card>
+    </div>
